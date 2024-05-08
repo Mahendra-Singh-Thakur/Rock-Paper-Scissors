@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3.6%;
+    background-color: aquamarine;
+    padding: 1%;
+    border-radius: 2ex;
+}
+h1{
+    border: double 4px black;
+    border-radius: 1ex;
+}
+.boxes {
+    /* border:  1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+img {
+    width: 94%;
+    height: 94%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.scoreboard {
+    margin-top: 5%;
+    font-size: 39px;
+    text-align: center; 
+    
+}
+#score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    margin-bottom: 1%;
+}
+#name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+
+#textdis {
+    position: absolute;
+    bottom: 15%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:aquamarine;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 50px;
+    padding: 9px 20px;
+    font-weight: bold;
+}
+
+#mysco{
+    margin-right: 6%;
+ 
+    font-size: 60px;
+    padding: 0px 9px;
+    background-color: white;
+    border-radius:8px;
+}
+#compsco{
+    padding: 0px 9px;
+    font-size: 60px;
+    background-color: white;
+    border-radius:8px;
+}
+.box:hover{
+    background-color: rgb(21, 20, 20);
+}
+btn{
+    text-decoration: none;
+}
+#resetbtn{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(21, 20, 20);
+    color: white;
+    border-radius: 10px;
+    padding: 6% 21%;
+}
+
+#resetbtn:hover{
+    color: wheat;
+}
+#reset {
+    position: absolute;
+    bottom: 4%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    #heading {
+        font-size: 7vw;
+    }
+
+    h1 {
+        border-width: 0.6vw;
+    }
+
+    .box {
+        width: 30vw;
+        height: 30vw;
+        border-width: 0.6vw;
+    }
+
+    img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .scoreboard {
+        font-size: 5vw;
+    }
+
+    #textdis {
+        font-size: 7vw;
+    }
+
+    #mysco,
+    #compsco {
+        font-size: 8vw;
+    }
+
+    #resetbtn {
+        font-size: 5vw;
+        padding: 3% 15%;
+    }
+}
+
+@media screen and (max-width: 242px) {
+    #heading {
+        font-size: 9vw;
+    }
+
+    h1 {
+        border-width: 0.8vw;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 50vw;
+        height: 50vw;
+        border-width: 0.8vw;
+    }
+
+    img {
+        width: 85%;
+        height: 85%;
+    }
+
+    .scoreboard {
+        font-size: 6vw;
+    }
+
+    #textdis {
+        font-size: 9vw;
+    }
+
+    #mysco,
+    #compsco {
+        font-size: 10vw;
+    }
+
+    #resetbtn {
+        font-size: 6vw;
+        padding: 3% 20%;
+    }
+}
